@@ -128,7 +128,7 @@ a:hover {
 
 #logo-svg {
     width: 70%;
-    
+    height: auto;
 }
 
 #contact {
