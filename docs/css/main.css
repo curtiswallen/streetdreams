@@ -108,13 +108,7 @@ a {
 }
 
 a:hover {
-    background-color: #fff;
-    background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(248,255,0,1) 12%, rgba(9,255,0,1) 27%, rgba(0,255,196,1) 42%, rgba(0,82,255,1) 58%, rgba(158,0,255,1) 73%, rgba(255,0,146,1) 87%, rgba(255,0,0,1) 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+    border-bottom: 1px solid #fff;
 }
 
 #splash {
@@ -127,7 +121,8 @@ a:hover {
 }
 
 #logo-svg {
-    width: 50%;
+    margin-left: -5%;
+    width: 40%;
     height: auto;
 }
 
