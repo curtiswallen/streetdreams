@@ -109,7 +109,7 @@ a {
 }
 
 a:hover {
-    color: #000;
+    color: #202020;
 }
 
 #splash {
@@ -131,6 +131,103 @@ a:hover {
 #contact {
     font-size: 1.5em;
     padding-top: 2%;
+}
+
+#welcome-form-container {
+    padding: 5vw;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.welcome-block {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.welcome-block.top {
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.welcome-block.form {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    border: 2px dotted white;
+}
+
+.welcome-block.form div:first-child {
+    width: auto;
+    flex: 0 0 auto;
+    white-space: wrap;
+}
+
+.welcome-block.form ol {
+    margin: 0;
+}
+
+.welcome-block.form ol li {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+form label {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 10px;
+}
+
+input[type='checkbox'] {
+    width:20px;
+    height:20px;
+}
+
+.contact-welcome-block {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.welcome-block div:first-child {
+    width: 150px;
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+.contact-welcome-block .welcome-block div:first-child {
+    width: auto;
+    flex: 0 0 auto;
+    white-space: wrap;
+}
+
+.welcome-block.top div:first-child {
+    white-space: nowrap;
+}
+
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#welcome-form-container ul {
+    list-style-type: "- ";
+    margin: 0;
+    padding: 0;
+}
+
+#welcome-form-container ul li {
+    margin-bottom: 5px;
 }
 
 /* ==========================================================================
@@ -222,9 +319,61 @@ a:hover {
 @media only screen and (max-width: 600px) {
     /* Style adjustments for viewports that meet the condition */
     #logo-svg {
-    width: 90%;
-    height: auto;
-}
+        width: 90%;
+        height: auto;
+    }
+
+    body {
+        padding: 5vw;
+    }
+
+    #welcome-form-container {
+        padding: 0;
+        width: 87vw;
+    }
+
+    .welcome-block.top {
+        flex-direction: column;
+        gap: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .welcome-block.top div {
+        max-width: 70vw;
+    }
+
+    .welcome-block div:first-child {
+        width: 75px;
+        flex: 0 0 auto;
+        white-space: wrap;
+    }
+
+    .welcome-block.top div:first-child {
+        width: auto;
+        flex: 0 0 auto;
+        white-space: wrap;
+    }
+
+    .contact-welcome-block .welcome-block div:first-child {
+        width: 75px;
+        flex: 0 0 auto;
+        white-space: wrap;
+    }
+
+    #welcome-logo-svg {
+        max-width: 90vw;
+        height: auto;
+    }
+
+    .contact-welcome-block {
+        margin-top: 100vh;
+        flex-wrap: wrap;
+    }
 
 }
 
